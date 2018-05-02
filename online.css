@@ -1,0 +1,145 @@
+/* 图片管理样式 */
+.onlinepic {
+    width: 100%;
+    height: 190px;
+    padding: 10px 0 0 0;
+}
+.onlinepic #imageList{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 10px;
+    position: relative;
+}
+.onlinepic ul {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.onlinepic li {
+    float: left;
+    display: block;
+    list-style: none;
+    padding: 0;
+    width: 113px;
+    height: 132px;
+    margin: 0 0 9px 9px;
+    *margin: 0 0 6px 6px;
+    background-color: #eee;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+.onlinepic li.clearFloat {
+    float: none;
+    clear: both;
+    display: block;
+    width:0;
+    height:0;
+    margin: 0;
+    padding: 0;
+}
+.onlinepic li img {
+    cursor: pointer;
+     height: 113px;
+}
+.onlinepic li .icon {
+    cursor: pointer;
+    width: 113px;
+    height: 113px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border: 0;
+    background-repeat: no-repeat;
+}
+.onlinepic li:last-child{
+	margin-bottom:50px;
+}
+.onlinepic li .icon:hover {
+    width: 107px;
+    height: 107px;
+    border: 3px solid #1094fa;
+}
+.onlinepic li.selected .icon {
+    background-image: url(../image/success.png);
+    background-position: 72px 72px;
+    width: 107px;
+    height: 107px;
+    border: 3px solid #1094fa;
+}
+.onlinepic li.selected .icon:hover {
+    width: 107px;
+    height: 107px;
+    border: 3px solid #1094fa;
+    -background-position: 72px 72px;
+}
+.onlinepic #searchButton{
+    color: white;
+    border-color: #285e8e;
+    background-color: #3b97d7;
+	display: inline-block;
+    height: 23px;
+    line-height: 23px;
+    margin-bottom: 0;
+    margin-left: 15px;
+    padding: 0px 10px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    font-size: 14px;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: top;
+    outline:none
+}
+.onlinepic li .filename{
+	position: absolute;
+    width: 113px;
+    bottom: 0;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.onlinepic input.searchText {
+    margin-left: 5px;
+    padding-left: 5px;
+    background: #FFF;
+    width: 300px;
+    height: 21px;
+    line-height: 21px;
+    float: left;
+    display: block;
+    font-size:14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.onlinepic li .icon {
+    cursor: pointer;
+    width: 113px;
+    height: 113px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border: 0;
+    background-repeat: no-repeat;
+}
+
+body .layui-layer-btn {
+    text-align: center;
+    padding-top: 15px;
+    background: #f0f4f7;
+    border-top: 1px #c7c7c7 solid;
+}
